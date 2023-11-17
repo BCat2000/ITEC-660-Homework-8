@@ -1,0 +1,27 @@
+
+
+#firstLevel{
+
+    background-color: steelblue;
+    border-radius: 7px;
+    width: 15%;
+
+}
+#secondLevel{
+    background-color: tan;
+    border-radius: 7px;
+    width: 28%;
+}
+
+#secondLevel:hover{
+
+    font-size: larger;
+    
+    
+}
+#firstLevel:hover{
+
+    font-size: larger;
+    
+    
+}

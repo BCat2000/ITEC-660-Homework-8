@@ -2,6 +2,8 @@
 # import Contact from Models
 from django.http import HttpResponse
 from .models import Contact
+from django.shortcuts import render
+
 
 def index(request):
     #return HttpResponse('Hello World')
@@ -22,3 +24,18 @@ def index(request):
     return HttpResponse("<html style='background-color:tan;'>" +"Brennan Catalan <BR> Professor Bradley Watson <br> Franklin University <br> ITEC 660 <br> 11/9/23" + "<div style='background-color:gray; color:white; border-radius:50px; text-align:center;'>" "All Contacts:<br>" + mylist + "</div>" + "</html>") # Center the list and add other CSS changes
     # update return: Center the list, 
     # and make two other css modifications as you wish.
+
+
+
+
+# Create your views here.
+from django.http import HttpResponse
+from .models import Contact
+
+def index(request):
+    #return HttpResponse('Hello World')
+
+    # Display contacts
+    all_contacts = Contact.objects.all()
+    
+    return render(request, 'index.html', {'contacts':all_contacts})
