@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+{%load static%}
+
+    <title>Page Title</title>
+  <link rel="stylesheet" href='{% static 'styles.css' %}' />
+</head>
+<body>
+
+<h1>My Contacts</h1>
+<h5>Brennan Catalan</h5>
+<h5>Professor Bradley Watson</h5>
+<h5>Franklin University</h5>
+<h5>11/16/23</h5>
+
+
+{%for contact in contacts%}
+<li> {{contact.first_name}}  {{contact.last_name}}</li>
+{%endfor%}
+</body>
+</html>

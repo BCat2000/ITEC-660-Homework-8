@@ -1,0 +1,23 @@
+li {
+
+    color: maroon;
+    background-color: tan;
+    text-align: center;
+    width: 30%;
+    list-style: upper-roman;
+    
+    margin:auto;
+    border-radius: 5px;
+}
+
+li:hover{
+    font-size: larger;
+}
+
+h1{
+    text-align: center  ;
+}
+h5{
+    text-align: center
+    ;
+}
